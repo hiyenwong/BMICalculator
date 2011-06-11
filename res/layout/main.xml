@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="wrap_content"
+	android:layout_height="wrap_content" android:baselineAligned="true">
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/bmiTitle"
+		android:textSize="35sp" android:layout_marginBottom="30dp" />
+	<RelativeLayout android:id="@+id/relativeLayout1"
+		android:layout_height="match_parent" android:layout_width="wrap_content">
+		<!-- 体重标签 -->
+		<TextView android:text="@string/weighLabel" android:id="@+id/WeighLabel"
+			android:paddingTop="21dp" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="25sp"></TextView>
+		<!-- 体重输入框 -->
+		<EditText android:id="@+id/yourWeigh" android:layout_height="50dp"
+			android:layout_toRightOf="@id/WeighLabel" android:numeric="decimal"
+			android:layout_width="120dp" android:hint="@string/weightHint"
+			android:textSize="10sp"></EditText>
+		<!-- 身高标签 -->
+		<TextView android:text="@string/heightLabel" android:id="@+id/HeightLabel"
+			android:layout_below="@id/WeighLabel" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="25sp"></TextView>
+		<!-- 身高输入框 -->
+		<EditText android:hint="@string/heightHint" android:id="@+id/yourHeight"
+			android:layout_below="@id/yourWeigh" android:layout_toRightOf="@id/HeightLabel"
+			android:numeric="decimal" android:layout_height="50dp"
+			android:layout_width="120dp"></EditText>
+		<!-- 计算按钮 -->
+		<Button android:layout_height="100dp" android:textSize="15sp"
+			android:id="@+id/calcutlatorBMI" android:layout_width="wrap_content"
+			android:layout_alignParentRight="true" android:text="@string/calBmi"></Button>
+	</RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    
+    <string name="app_name">bmiCalcutlator</string>
+<string name="bmiTitle">BMI计算器</string>
+    <string name="weighLabel">你的体重:</string>
+<string name="weightHint">单位是KG</string>
+    <string name="heightLabel">你的身高:</string>
+    <string name="heightHint">单位是cm</string>
+    <string name="calBmi">计算BMI</string>
+</resources>

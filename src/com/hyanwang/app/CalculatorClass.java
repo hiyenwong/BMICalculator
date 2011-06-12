@@ -1,5 +1,7 @@
 package com.hyanwang.app;
 
+import java.math.BigDecimal;
+
 /**
  * PROJECT NAME: bmiCalculator
  * 
@@ -14,14 +16,21 @@ package com.hyanwang.app;
  * 
  */
 
+/*
+ * the Calculator Class
+ */
+
 public class CalculatorClass implements Calculator_Interface {
 
 	@Override
-	//bmi计算方法
-	public int bmiCal(float weighvalue, float heightvalue) { 
-		int resultBMI;
-		resultBMI = (int) (weighvalue / Math.pow(heightvalue, 2));
-		return resultBMI;
+	/* BMI计算方法，返回一个String值 */
+	public String bmiCal(float weighvalue, float heightvalue) {
+		// 体重指数bmi=体重/身高的平方（国际单位kg/㎡）
+		BigDecimal bigDecimal = new BigDecimal(weighvalue
+				/ Math.pow(heightvalue, 2));
+		return String.valueOf(bigDecimal.setScale(2, BigDecimal.ROUND_HALF_UP));
+		// TODO:抛出如果身高为0的可能
+
 	}
 
 }

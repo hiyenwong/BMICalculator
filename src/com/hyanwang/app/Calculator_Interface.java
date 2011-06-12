@@ -10,10 +10,15 @@ package com.hyanwang.app;
  *         blog: http://kutanworld.tumblr.com/
  * @date Jun 12, 2011
  * 
- * @comment:计算方法接口
+ * @comment:计算方法接口,其中实现多个计算健康值的公式
  *
  */
 
+/*
+ * The Interface is about Calculator
+*/
+
 public interface Calculator_Interface {
-	int bmiCal(float weighvalue,float heightvalue); //计算BMI值
+	//计算BMI值
+	String bmiCal(float weighvalue,float heightvalue); 
 }
